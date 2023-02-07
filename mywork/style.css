@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 77px;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.imagen img {
+  width: 539.22px;
+  height: 447.43px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.textos {
+  font-family: "Space mono", sans-serif;
+}
+
+.textos h2 {
+  font-size: 64px;
+}
+.textos p {
+  font-size: 24px;
+}
+.textos button {
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer p {
+    display: flex;
+    flex-direction: row;
+  }
+}
